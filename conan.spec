@@ -93,5 +93,5 @@ find -type f -exec sed -iE '1s=^#! */usr/bin/\(python\|env python\)[23]\?=#!%{__
 
 %changelog
 
-* Sat Aug 07 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.39.0-7
+* Sat Aug 07 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.39.0-1
 - Initial build
