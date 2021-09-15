@@ -1,9 +1,9 @@
-%global commit0 c1ab505b80c41567b35e8b5cbc0e00fba2e5c11d
+%global commit0 9a1f43bd350f4971b4a46a073e98b7a14513137b
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name: conan
-Version: 1.39.0
+Version: 1.40.1
 Release: 1%{?dist}
 
 Summary: The open-source C/C++ package manager
@@ -92,6 +92,9 @@ find -type f -exec sed -iE '1s=^#! */usr/bin/\(python\|env python\)[23]\?=#!%{__
 %{python3_sitelib}/%{name}-*.egg-info
 
 %changelog
+
+* Tue Sep 14 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.40.1-1
+- Updated to 1.40.1
 
 * Sat Aug 07 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.39.0-1
 - Initial build
