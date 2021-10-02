@@ -1,14 +1,14 @@
-%global commit0 9a1f43bd350f4971b4a46a073e98b7a14513137b
+%global commit0 81fbfe9831276fbf43193397af9739465ccc4e78
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name: conan
-Version: 1.40.1
+Version: 1.40.3
 Release: 1%{?dist}
 
 Summary: The open-source C/C++ package manager
 License: MIT
-URL: https://github.com/conan-io/%{name}
+URL: https://github.com/conan-io/conan
 Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 Patch: requirements.patch
 BuildArch: noarch
@@ -92,6 +92,12 @@ find -type f -exec sed -iE '1s=^#! */usr/bin/\(python\|env python\)[23]\?=#!%{__
 %{python3_sitelib}/%{name}-*.egg-info
 
 %changelog
+
+* Fri Oct 01 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.40.3-1
+- Updated to 1.40.3
+
+* Fri Sep 24 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.40.2-1
+- Updated to 1.40.2
 
 * Tue Sep 14 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.40.1-1
 - Updated to 1.40.1
