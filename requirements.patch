@@ -1,33 +1,32 @@
 diff -ruN orig/conans/requirements.txt new/conans/requirements.txt
---- orig/conans/requirements.txt	2021-09-21 10:02:48.000000000 -0600
-+++ new/conans/requirements.txt	2021-10-01 21:24:52.719829690 -0600
-@@ -1,15 +1,15 @@
+--- orig/conans/requirements.txt	2021-10-06 05:14:03.000000000 -0600
++++ new/conans/requirements.txt	2021-10-24 01:02:11.062125475 -0600
+@@ -1,14 +1,14 @@
 -PyJWT>=1.4.0, <2.0.0
 -requests>=2.25, <3.0.0
 -urllib3>=1.26.6, <1.27
 -colorama>=0.3.3, <0.5.0
 -PyYAML>=3.11, <6.0
 -patch-ng>=1.17.4, <1.18
-+PyJWT>=1.4.0
-+requests
-+urllib3
-+colorama>=0.3.3
-+PyYAML>=3.11
-+patch-ng
- fasteners>=0.14.1
+-fasteners>=0.14.1
 -six>=1.10.0,<=1.16.0
 -node-semver==0.6.1
 -distro>=1.0.2, <=1.6.0
--future>=0.16.0, <0.19.0
 -pygments>=2.0, <3.0
 -tqdm>=4.28.1, <5
 -Jinja2>=2.9, <3
 -python-dateutil>=2.7.0, <3
-+six>=1.10.0
-+node-semver>=0.6.1
-+distro>=1.0.2
-+future>=0.16.0
-+pygments>=2.0
-+tqdm>=4.28.1
-+Jinja2>=2.9
-+python-dateutil>=2.7.0
++PyJWT
++requests
++urllib3
++colorama
++PyYAML
++patch-ng
++fasteners
++six
++node-semver
++distro
++pygments
++tqdm
++Jinja2
++python-dateutil
