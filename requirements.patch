@@ -1,6 +1,6 @@
 diff -ruN orig/conans/requirements.txt new/conans/requirements.txt
---- orig/conans/requirements.txt	2021-10-06 05:14:03.000000000 -0600
-+++ new/conans/requirements.txt	2021-10-24 01:02:11.062125475 -0600
+--- orig/conans/requirements.txt	2022-01-13 01:56:34.000000000 -0600
++++ new/conans/requirements.txt	2022-01-16 02:50:32.324958866 -0600
 @@ -1,14 +1,14 @@
 -PyJWT>=1.4.0, <2.0.0
 -requests>=2.25, <3.0.0
@@ -14,7 +14,7 @@ diff -ruN orig/conans/requirements.txt new/conans/requirements.txt
 -distro>=1.0.2, <=1.6.0
 -pygments>=2.0, <3.0
 -tqdm>=4.28.1, <5
--Jinja2>=2.9, <3
+-Jinja2>=2.9, <4.0.0
 -python-dateutil>=2.7.0, <3
 +PyJWT
 +requests
