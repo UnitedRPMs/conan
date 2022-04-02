@@ -1,7 +1,7 @@
 diff -ruN orig/conans/requirements.txt new/conans/requirements.txt
---- orig/conans/requirements.txt	2022-01-13 01:56:34.000000000 -0600
-+++ new/conans/requirements.txt	2022-01-16 02:50:32.324958866 -0600
-@@ -1,14 +1,14 @@
+--- orig/conans/requirements.txt	2022-03-31 03:09:35.000000000 -0600
++++ new/conans/requirements.txt	2022-04-02 00:20:05.277107467 -0600
+@@ -1,17 +1,17 @@
 -PyJWT>=1.4.0, <2.0.0
 -requests>=2.25, <3.0.0
 -urllib3>=1.26.6, <1.27
@@ -11,10 +11,12 @@ diff -ruN orig/conans/requirements.txt new/conans/requirements.txt
 -fasteners>=0.14.1
 -six>=1.10.0,<=1.16.0
 -node-semver==0.6.1
--distro>=1.0.2, <=1.6.0
+-distro>=1.0.2, <=1.6.0; sys_platform == 'linux' or sys_platform == 'linux2'
 -pygments>=2.0, <3.0
 -tqdm>=4.28.1, <5
--Jinja2>=2.9, <4.0.0
+-Jinja2>=2.9, <3.0.0;python_version<='2.7'
+-MarkupSafe<=2.0.1;python_version<='2.7'
+-Jinja2>=3.0, <4.0.0;python_version>='3'
 -python-dateutil>=2.7.0, <3
 +PyJWT
 +requests
@@ -29,4 +31,7 @@ diff -ruN orig/conans/requirements.txt new/conans/requirements.txt
 +pygments
 +tqdm
 +Jinja2
++MarkupSafe
++Jinja2
 +python-dateutil
+ configparser>=3.5;python_version<='2.7'
