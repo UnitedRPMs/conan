@@ -1,9 +1,9 @@
-%global commit0 5b4f1494af61ff407b20f2195764fbcfa4210444
+%global commit0 b4c25cd9fd852449e1a8ac46b85edb0d969742fc
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name: conan
-Version: 1.47.0
+Version: 1.48.2
 Release: 1%{?dist}
 
 Summary: The open-source C/C++ package manager
@@ -14,6 +14,7 @@ Patch: requirements.patch
 BuildArch: noarch
 
 BuildRequires: python3-devel
+BuildRequires: python3-setuptools
 BuildRequires: python3-jwt
 BuildRequires: python3-requests
 BuildRequires: python3-urllib3
@@ -92,6 +93,9 @@ find -type f -exec sed -iE '1s=^#! */usr/bin/\(python\|env python\)[23]\?=#!%{__
 %{python3_sitelib}/%{name}-*.egg-info
 
 %changelog
+
+* Thu Jun 09 2022 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.48.2-1
+- Updated to 1.48.2
 
 * Fri Apr 01 2022 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.47.0-1
 - Updated to 1.47.0
